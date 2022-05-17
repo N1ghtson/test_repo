@@ -1,7 +1,10 @@
 package pages;
 
+import core.BaseDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.support.PageFactory;
 
 public class MainPage extends BasePage {
 
@@ -52,4 +55,7 @@ public class MainPage extends BasePage {
 
     @AndroidFindBy(id="com.google.android.calculator:id/clr")
     public MobileElement clear;
+
+    public MainPage() {PageFactory.initElements(new AppiumFieldDecorator(BaseDriver.getDriver()), this);
+    }
 }

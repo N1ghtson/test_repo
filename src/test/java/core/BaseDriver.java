@@ -2,7 +2,7 @@ package core;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
+
 
 public class BaseDriver {
     private static AppiumDriver<MobileElement> driver;
@@ -11,7 +11,7 @@ public class BaseDriver {
     }
 
     private static AppiumDriver<MobileElement> createDriver() {
-        driver = new AndroidDriver<>(AppiumStarter.getAppiumDriver(4723), BaseConfiguration.getCapabilities());
+        driver = new AppiumDriver<>(AppiumStarter.getAppiumDriver(4723), BaseConfiguration.getCapabilities());
         return driver;
     }
 
