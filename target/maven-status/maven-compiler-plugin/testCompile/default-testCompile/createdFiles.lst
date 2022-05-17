@@ -1,7 +1,0 @@
-core\BaseDriver.class
-pages\BasePage.class
-core\BaseConfiguration.class
-tests\CalculatorTest.class
-core\AppiumStarter.class
-tests\BaseTest.class
-pages\MainPage.class
